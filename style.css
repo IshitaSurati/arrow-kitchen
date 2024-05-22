@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Navbar */
+.dropdown-toggle::after {
+  display: none;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.icon-width {
+  width: 2rem;
+}
+
+.nav-link {
+  color: #93262A;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  margin-top: 50px; 
+}
+
+.ban_img {
+  width: 100%;
+  position: relative;
+}
+
+.ban_img img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .ban_img img {
+    min-height: 290px;
+    object-fit: cover;
+  }
+}
+
+/* Services */
+h1 {
+  text-align: center;
+  color: #93262A;
+}
+#services{
+  background-color: rgb(248, 246, 243);
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px; 
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#pdfViewer {
+  width: 100%;
+  height: 60vh; 
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .modal-content {
+    margin: 20px auto;
+    width: 90%;
+    max-width: none;
+  }
+
+  #pdfViewer {
+    height: 50vh;
+  }
+}
+
+/* About section */
+.about-section {
+  padding: 50px 0;
+  text-align: left;
+  background-color: #f8f9fa; 
+}
+
+.about-section h2 {
+  color: #333; 
+}
+
+.about-section p {
+  color: #666;
+}
+
+/* Contact section */
+.contact-section {
+  padding: 50px 0;
+  text-align: left;
+  background-image: url('/img/img-bg-contact.jpg');
+  background-size: cover;
+}
+
+.contact-section h2 {
+  color: #333; 
+}
+
+.contact-section p {
+  color: #666; 
+}
+
+.contact-section ul {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.contact-section ul li {
+  margin-bottom: 10px; 
+}
+
+.contact-section ul li:last-child {
+  margin-bottom: 0; 
+}
+
+/* Footer */
+.footer-section {
+  padding: 50px 0;
+  text-align: left;
+  background-color: #333; 
+  color: #fff;
+}
+
+.footer-section h3 {
+  color: #fff;
+}
+
+.footer-section p {
+  color: #ccc; 
+}
+
+.social-icons {
+  list-style-type: none; 
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.social-icons li:last-child {
+  margin-right: 0; 
+}
+
+.social-icons a {
+  color: #fff; 
+}
+/* Your existing CSS styles */
+
+/* Position the icons */
+.fixed-icons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+
+/* Style the icons */
+.fixed-icons a {
+  display: inline-block;
+  margin-left: 10px;
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.fixed-icons a:hover {
+  background-color: #0062cc;
+}
+
+/* Style the WhatsApp icon */
+.fixed-icons a.whatsapp {
+  background-color: #25d366;
+}
+
+.fixed-icons a.whatsapp:hover {
+  background-color: #128c7e;
+}
+
+/* Style the Call icon */
+.fixed-icons a.call {
+  background-color: #dc3545;
+}
+
+.fixed-icons a.call:hover {
+  background-color: #c82333;
+}
+
+/* Style the Email icon */
+.fixed-icons a.email {
+  background-color: #ffc107;
+}
+
+.fixed-icons a.email:hover {
+  background-color: #e0a800;
+}
+
+/* Additional CSS styles for the modal, if any */
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .about-section,
+  .contact-section,
+  .footer-section {
+    padding: 30px 0; 
+  }
+
+  .social-icons li {
+    margin-right: 8px; 
+  }
+}
+
+/* Hover effects */
+.navbar-nav .nav-link:hover {
+    color: #93262A;
+}
+
+.social-icons a:hover {
+    color: #93262A;
+}
+
+.image-hover:hover {
+  transform: scale(1.1); /* Increase size on hover */
+  transition: transform 0.5s ease; /* Add smooth transition */
+}
+/* Hover effects */
+.navbar-nav .nav-link:hover {
+  color: #93262A;
+}
+
+.social-icons a:hover {
+  color: #93262A;
+}
+.img-thumbnail {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  max-height: 200px; /* Adjust the maximum height as needed */
+}
+h5{
+  color:#f77206;
+}
+
