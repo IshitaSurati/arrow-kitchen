@@ -28,6 +28,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <!-- smtp cdn -->
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -110,7 +112,7 @@
     <!-- Slider Section -->
 
     <!-- Services Section -->
-    <div class="container" id="services">
+    <!-- <div class="container" id="services">
         <h1>: Authorised Distributor :</h1>
         <br><br>
         <div class="container-fluid">
@@ -153,27 +155,92 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-
-
+    </div> -->
     <!-- Modal -->
-    <div class="modal" id="pdfModal">
-        <div class="modal-dialog">
+    <!-- Modal for PDF Details -->
+    <div class="modal fade" id="pdfDetailsModal" tabindex="-1" aria-labelledby="pdfDetailsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
-                <!-- Modal Header -->
                 <div class="modal-header">
-                    <h5 class="modal-title">PDF Links</h5>
+                    <h5 class="modal-title" id="pdfDetailsModalLabel">PDF Details</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <!-- Modal Body -->
-                <div class="modal-body" id="pdfLinks">
-                    <!-- PDF links will be added here dynamically -->
+                <div class="modal-body">
+                    <div id="pdfDetails"></div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Main Content -->
+    <div class="container" id="services">
+        <h1>: Authorised Distributor :</h1>
+        <br><br>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/prabha-1.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+                        {
+                            link: 'https://drive.google.com/file/d/1_WS1xqNUk__CQxzf7bd-rykxA1V0MYnN/view?usp=sharing',
+                            name: 'Prabha Cutlery 1',
+                            pageIndexes: [
+                                { pages: '1-2', category: 'item 1' },
+                                { pages: '2-5', category: 'item 2' }
+                            ],
+                            previewImage: '/img/prabha-preview-1.jpg'
+                        },
+                        {
+                            link: 'https://drive.google.com/file/d/1sK86wVx_bmaILL8_-WSgiEBDwuO5CgKg/view?usp=sharing',
+                            name: 'Prabha Cutlery 2',
+                            pageIndexes: [
+                                { pages: '1-3', category: 'item 1' },
+                                { pages: '4-7', category: 'item 2' }
+                            ],
+                            previewImage: '/img/prabha-preview-2.jpg'
+                        }
+                    ])">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openPdfDetails(pdfData) {
+            var pdfDetailsContainer = document.getElementById('pdfDetails');
+            pdfDetailsContainer.innerHTML = '';
+
+            pdfData.forEach(function (data, index) {
+                var pdfDetail = document.createElement('div');
+                pdfDetail.innerHTML = `
+                <h5>${index + 1}. <a href="${data.link}" target="_blank">${data.name}</a></h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Page No.</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        ${data.pageIndexes.map(page => `
+                            <tr>
+                                <td>${page.pages}</td>
+                                <td>${page.category}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+                <img src="${data.previewImage}" class="img-fluid" alt="Preview Image">
+            `;
+                pdfDetailsContainer.appendChild(pdfDetail);
+            });
+
+            var modal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
+            modal.show();
+        }
+    </script>
+
     <br>
     <!-- Contact section -->
     <div id="#contact">
@@ -267,7 +334,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="contactForm" >
+                            <form id="contactForm" onsubmit="emailform(); reset(); return false;">
                                 <div class="mb-3">
                                     <input type="text" class="form-control" id="fullName" placeholder="Full Name"
                                         name="fullName" required>
