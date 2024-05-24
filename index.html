@@ -8,6 +8,7 @@
     <!-- favicon -->
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
     <!-- Bootstrap links -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Fontawesome -->
@@ -38,40 +39,48 @@
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="/img/img1logo.png" alt="logo" width="150">
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar4">
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar4">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar4">
                 <ul class="navbar-nav mr-auto pl-lg-4">
-                    <li class="nav-item px-lg-2 active "> <a class="nav-link" href="#home"> <span
-                                class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home</a>
+                    <li class="nav-item px-lg-2 active">
+                        <a class="nav-link" href="#home">
+                            <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-home"></i></span>Home
+                        </a>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#services"><span
-                                class="d-inline-block d-lg-none icon-width"><i
-                                    class="fas fa-spa"></i></span>Services</a> </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#About">
-                            <span class="d-inline-block d-lg-none icon-width">
-                                <i class="far fa-user"></i></span>About</a>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" href="#services">
+                            <span class="d-inline-block d-lg-none icon-width"><i class="fas fa-spa"></i></span>Services
+                        </a>
                     </li>
-                    <li class="nav-item px-lg-2"> <a class="nav-link" href="#contact"><span
-                                class="d-inline-block d-lg-none icon-width"><i
-                                    class="far fa-envelope"></i></span>Contact</a> </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" href="#About">
+                            <span class="d-inline-block d-lg-none icon-width"><i class="far fa-user"></i></span>About
+                        </a>
+                    </li>
+                    <li class="nav-item px-lg-2">
+                        <a class="nav-link" href="#contact">
+                            <span class="d-inline-block d-lg-none icon-width"><i
+                                    class="far fa-envelope"></i></span>Contact
+                        </a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto mt-3 mt-lg-0">
-                    <li class="nav-item"> <a class="nav-link" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             <i class="fab fa-facebook"></i><span class="d-lg-none ml-3">Facebook</span>
-                        </a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
                             <i class="fab fa-instagram"></i><span class="d-lg-none ml-3">Instagram</span>
-                        </a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">
-                            <i class="fab fa-linkedin"></i><span class="d-lg-none ml-3">Linkedin</span>
-                        </a> </li>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
     <!-- banner section -->
     <div class="banner" id="home">
         <section class="ban_sec">
@@ -109,162 +118,295 @@
             </div>
         </section>
     </div>
-    <!-- Slider Section -->
-
     <!-- Services Section -->
-    <!-- <div class="container" id="services">
-        <h1>: Authorised Distributor :</h1>
-        <br><br>
-        <div class="container-fluid">
-            <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/prabha-1.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1_WS1xqNUk__CQxzf7bd-rykxA1V0MYnN/view?usp=sharing', 'https://drive.google.com/file/d/1sK86wVx_bmaILL8_-WSgiEBDwuO5CgKg/view?usp=sharing', 'https://drive.google.com/file/d/1PfOr0X7Pgbnc2WxSMTc83d6Z9jvPkAA8/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/delight-2.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1p0KhB_Odlh4_dTxewzJr5ataB_416wvW/view?usp=sharing', 'https://drive.google.com/file/d/1UEalsoe2iawUN3HwEzT0aCK4FG1w0_FK/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/KVG-3.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/18e6zwj9HMnO-s0OyFbDklwGbpZWuYJms/view?usp=sharing', 'https://drive.google.com/file/d/1gbhIbGNjMQNxnmtsbD8Ylfp7APi-dwbV/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/Kook-4.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1ImEtv-tvNObnFd0oIqnMGWGirkE0yk4g/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/vinod-5.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1_OIRbGZBs542ReO-F4KfqZ-pVq6Vkm0Q/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/rena-6.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/15xhW-Ujlj4d5SUJeNqh1L5SKFetYBXsO/view?usp=sharing', 'https://drive.google.com/file/d/1toWszQ95A_YrJvv_zV5cIhkwrNjxKgJI/view?usp=sharing', 'https://drive.google.com/file/d/1lZjg5QNHbrft70P5u-dcAypP_IIFIGyn/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/roop-7.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1VTZKFeqTTCRH0l-yvAcb06VVN7Cp6JMu/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/kraft-8.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1JywtwMb0qfLTT_5-XEe7YG3wtrrLAqfo/view?usp=sharing'])">
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <img src="/img/home-pro-9.png" alt="" class="rounded mx-auto d-block img-thumbnail image-hover"
-                        onclick="openPdfModal(['https://drive.google.com/file/d/1ohSMdgK2QGwSWDmrQU4olc4NT9I1RtA4/view?usp=sharing'])">
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Modal -->
-    <!-- Modal for PDF Details -->
     <div class="modal fade" id="pdfDetailsModal" tabindex="-1" aria-labelledby="pdfDetailsModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="pdfDetailsModalLabel">PDF Details</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <!-- Cross icon -->
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeModal()"
+                        data-bs-dismiss="modal"></button>
+                        <span class="modal-toggler-icon"></span>
                 </div>
                 <div class="modal-body">
-                    <div id="pdfDetails"></div>
+                    <div id="pdfDetails" class="accordion accordion-flush"></div>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Main Content -->
     <div class="container" id="services">
         <h1>: Authorised Distributor :</h1>
         <br><br>
         <div class="container-fluid">
             <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-3">
+                <!-- First Image Block -->
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <img src="/img/prabha-1.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
                         onclick="openPdfDetails([
-                        {
-                            link: 'https://drive.google.com/file/d/1_WS1xqNUk__CQxzf7bd-rykxA1V0MYnN/view?usp=sharing',
-                            name: 'Prabha Cutlery 1',
-                            pageIndexes: [
-                                { pages: '1-2', category: 'item 1' },
-                                { pages: '2-5', category: 'item 2' }
-                            ],
-                            previewImage: '/img/prabha-preview-1.jpg'
-                        },
-                        {
-                            link: 'https://drive.google.com/file/d/1sK86wVx_bmaILL8_-WSgiEBDwuO5CgKg/view?usp=sharing',
-                            name: 'Prabha Cutlery 2',
-                            pageIndexes: [
-                                { pages: '1-3', category: 'item 1' },
-                                { pages: '4-7', category: 'item 2' }
-                            ],
-                            previewImage: '/img/prabha-preview-2.jpg'
-                        }
-                    ])">
+                            {
+                                link: 'https://drive.google.com/file/d/1_WS1xqNUk__CQxzf7bd-rykxA1V0MYnN/view?usp=sharing',
+                                name: 'MRP CUTLERY RANGE CATALOGUE (Open Pdf for Details)',
+                                pageIndexes: [
+                                    { pages: '1', category: 'Bronze Cutlery Range 2 ' },
+                                    { pages: '2', category: 'Silver Cutlery Range' },
+                                    { pages: '3', category: 'Gold Cutlery Range ' },
+                                    { pages: '4-5', category: 'Platinum Cutlery Range' },
+                                    { pages: '6-11', category: 'Luxury Cutlery Range ' },
+                                    { pages: '12', category: 'Serving Tools Range' },
+                                    { pages: '13-15', category: 'Kitchen Tools Range ' },
+                                    { pages: '16', category: 'Cutlery with Stand Range' },
+                                    { pages: '17-19', category: 'Net Items Range' }
+                                ],
+                                previewImage: '/img/preview-img-1.png'
+                            },
+                            {
+                                link: 'https://drive.google.com/file/d/1sK86wVx_bmaILL8_-WSgiEBDwuO5CgKg/view?usp=sharing',
+                                name: 'PRABHA MRP CATALOGUE (Open Pdf for Details)',
+                                pageIndexes: [
+                                    { pages: '1', category: 'Thali Set' },
+                                    { pages: '2-3', category: 'Plates' },
+                                    { pages: '4-6', category: 'Vati' },
+                                    { pages: '7-10', category: 'Glass Set' },
+                                    { pages: '11-13', category: 'Water Jug' },
+                                    { pages: '14-15', category: 'Handi Set' },
+                                    { pages: '16', category: 'Lemon Set Hand Press Juicer' },
+                                    { pages: '17', category: 'Casserole,Saucepan,Puttu Kudam,Coffee Dabra' },
+                                    { pages: '18', category: 'Spice Box' },
+                                    { pages: '19-20', category: 'Double Wall Tea & Coffee Mug' },
+                                    { pages: '21', category: 'Canisters' },
+                                    { pages: '22', category: 'Ghee Pot & Dispenser' },
+                                    { pages: '23-24', category: 'Ice Bucket' },
+                                    { pages: '25', category: 'Pawali Matki' },
+                                    { pages: '26', category: 'Lunch Box' },
+                                    { pages: '27-28', category: 'S.S Double/Single Wall & Feeding Bottle' },
+                                    { pages: '28', category: 'Tumbler With Straws' },
+                                    { pages: '29', category: 'Knife & Peeler Utility Items' },
+                                    { pages: '30-32', category: 'Gift Items' },
+                                ],
+                                previewImage: '/img/preview-img-2.png'
+                            },
+                            {
+                                link: 'https://drive.google.com/file/d/1PfOr0X7Pgbnc2WxSMTc83d6Z9jvPkAA8/view?usp=sharing',
+                                name: 'PRABHA COOKWARE RANGE (Open Pdf for Details)',
+                                pageIndexes: [
+                                    { pages: '1', category: 'Magnum (Hammered)' },
+                                    { pages: '2', category: 'enzo series' },
+                                    { pages: '3-5', category: 'prima (tri-ply)' },
+                                    { pages: '6', category: 'prochef (tri-ply)' },
+                                    { pages: '7-8', category: 'hexa cube (non-stick)' },
+                                    { pages: '8', category: 'stella (non-stick)' },
+                                    { pages: '9', category: 'astrid (non-stick)' },
+                                    { pages: '10', category: 'idli cooker & multi kadhai' },
+                                    { pages: '11', category: 'pressure cooker (tri-ply)' },
+                                    { pages: '11-12', category: 'pressure cooker (stainless steel & aluminium)' },
+                                    { pages: '12', category: 'spare parts' }
+                                ],
+                                previewImage: '/img/preview-img-3.png'
+                            }
+                        ])">
                 </div>
+                <!-- Second Image Block -->
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <img src="/img/delight-2.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
                         onclick="openPdfDetails([
+                            {
+                                link: 'https://drive.google.com/file/d/1p0KhB_Odlh4_dTxewzJr5ataB_416wvW/view?usp=sharing',
+                                name: 'Delight TryFold Design (Open Pdf for Details)',
+                                pageIndexes: [
+                                    { pages: '1-6', category: 'All Container , Cake Turntable and Decoration tool, fruit basket,chooper' }
+                                ],
+                                previewImage: '/img/preview-img-4.png'
+                            },
+                            {
+                                link: 'https://drive.google.com/file/d/1UEalsoe2iawUN3HwEzT0aCK4FG1w0_FK/view?usp=sharing',
+                                name: 'DELIGHT CATLOUGE 2022 (Open Pdf for Details)',
+                                pageIndexes: [
+                                    { pages: '1-8', category: 'all products' }
+                                ],
+                                previewImage: '/img/preview-img-4.png'
+                            }
+                        ])">
+                </div>
+                <!-- Third Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/KVG-3.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
                         {
-                            link: 'https://drive.google.com/file/d/1_WS1xqNUk__CQxzf7bd-rykxA1V0MYnN/view?usp=sharing',
-                            name: 'Prabha Cutlery 1',
+                            link: 'https://drive.google.com/file/d/18e6zwj9HMnO-s0OyFbDklwGbpZWuYJms/view?usp=sharing',
+                            name: 'KVG SS CATLOGUE NEW (Open Pdf for Details)',
                             pageIndexes: [
-                                { pages: '1-2', category: 'item 1' },
-                                { pages: '2-5', category: 'item 2' }
+                                { pages: 'all', category: 'all ss products ' }
                             ],
-                            previewImage: '/img/prabha-preview-1.jpg'
+                            previewImage: '/img/preview-img-5.png'
                         },
                         {
-                            link: 'https://drive.google.com/file/d/1sK86wVx_bmaILL8_-WSgiEBDwuO5CgKg/view?usp=sharing',
-                            name: 'Prabha Cutlery 2',
+                            link: 'https://drive.google.com/file/d/1gbhIbGNjMQNxnmtsbD8Ylfp7APi-dwbV/view?usp=sharing',
+                            name: 'KVG WOODEN CATLOGUE 2023 (Open Pdf for Details)',
                             pageIndexes: [
-                                { pages: '1-3', category: 'item 1' },
-                                { pages: '4-7', category: 'item 2' }
+                                { pages: 'all', category: 'all KVG WOODEN CATLOGUE  ' }
                             ],
-                            previewImage: '/img/prabha-preview-2.jpg'
+                            previewImage: '/img/preview-img-5.png'
                         }
                     ])">
                 </div>
+                <!-- Fourth Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/Kook-4.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+                        {
+                            link: 'https://drive.google.com/file/d/1ImEtv-tvNObnFd0oIqnMGWGirkE0yk4g/view?usp=sharing',
+                            name: 'KOOK RANGE CATALOGUE (Open Pdf for Details)',
+                            pageIndexes: [
+                                { pages: '1-10', category: 'Knifes' },
+                                { pages: '11-12', category: 'Peeler' },
+                                { pages: '13', category: 'twister and whisk' },
+                                { pages: '14', category: 'Ice-cream scoop and lime squeezer' },
+                                { pages: '15', category: 'cutter' },
+                                { pages: '16-18', category: 'tong,lighter,strainer,' },
+                            ],
+                            previewImage: '/img/preview-img-4.png'
+                        }
+                    ])">
+                </div>
+                <!-- Fifth Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/vinod-5.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+            {
+                link: 'https://drive.google.com/file/d/1_OIRbGZBs542ReO-F4KfqZ-pVq6Vkm0Q/view?usp=sharing',
+                name: 'VINOD RANGE CATALOGUE (Open Pdf for Details)',
+                pageIndexes: [
+                    { pages: '1-52', category: 'PRESSURE COOKER RANGE and pan Range' },
+                ],
+                previewImage: '/img/preview-img-6.png'
+            }
+        ])">
+                </div>
+                <!-- Sixth Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/rena-6.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+            {
+                link: 'https://drive.google.com/file/d/15xhW-Ujlj4d5SUJeNqh1L5SKFetYBXsO/view?usp=sharing',
+                name: 'RENA RANGE CATALOGUE (Open Pdf for Details)',
+                pageIndexes: [
+                    { pages: 'all', category: 'rena products ' },
+                ],
+                previewImage: '/img/preview-img-7.png'
+            }
+        ])">
+                </div>
+                <!-- Seventh Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/roop-7.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+            {
+                link: 'https://drive.google.com/file/d/1VTZKFeqTTCRH0l-yvAcb06VVN7Cp6JMu/view?usp=sharing',
+                name: 'ROOP SPOON CATALOGUE Range (Open Pdf for Details)',
+                pageIndexes: [
+                    { pages: '1-12', category: 'serving Range ' },
+                ],
+                previewImage: '/img/preview-img-8.png'
+            }
+        ])">
+                </div>
+                <!-- Eighth Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/kraft-8.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+            {
+                link: 'https://drive.google.com/file/d/1JywtwMb0qfLTT_5-XEe7YG3wtrrLAqfo/view?usp=sharing',
+                name: 'KRAFT RANGE CATALOGUE (Open Pdf for Details)',
+                pageIndexes: [
+                    { pages: '1-8', category: 'PRESSURE COOKER ' },
+                    { pages: '9-28', category: 'STAINLESS STEEL DINNER SETS ' },
+                    { pages: '29-31', category: 'GLASS SET ' },
+                    { pages: '32-50', category: 'CANISTER SET and SERVE & STORAGE SET' },
+                ],
+                previewImage:'/img/preview-img-9.png'
+            }
+        ])">
+                </div>
+                <!-- Ninth Image Block -->
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <img src="/img/home-pro-9.png" alt="img" class="rounded mx-auto d-block img-thumbnail image-hover"
+                        onclick="openPdfDetails([
+            {
+                link: 'https://drive.google.com/file/d/1ohSMdgK2QGwSWDmrQU4olc4NT9I1RtA4/view?usp=sharing',
+                name: ' RANGE CATALOGUE (Open Pdf for Details)',
+                pageIndexes: [
+                    { pages: '3-6', category: ' Stainless Steel Cookware' },
+                    { pages: '7', category: 'Water filter ' },
+                    { pages: '8', category: 'Mild Steel Ladders' },
+                    { pages: '9', category: 'Mild Steel Cloth Stands ' },
+                    { pages: '10', category: 'Stainless Steel Chopping Board' },
+                    { pages: '11-13', category: 'Oil Dispenser ' },
+                    { pages: '13-20', category: 'Cannisters' },
+                    { pages: '21', category: 'Single wall Stainless Steel' },
+                    { pages: '22', category: 'Masala Box' },
+                    { pages: '23', category: 'Coffee Mugs' },
+                    { pages: '24', category: 'Medu wada maker , Coconut Scraper' },
+                    { pages: '25', category: 'Lemon Squeezer , Dish Rack' },
+                    { pages: '26-27', category: 'Sumo Polpat,Jumbo Polpat' },
+                    { pages: '28', category: 'Stainless Steel Turtle Grater and Butter Dish' },
+                    { pages: '29', category: 'Aluminium Hand Juicer' },
+                    { pages: '34-38', category: 'Appam,Uttapam Maker' },
+                    { pages: '39-40', category: 'Toaster' },
+                    { pages: '40', category: 'Bread Toaster' },
+                    { pages: '41', category: 'Waffle Maker' },
+                    { pages: '42-46', category: 'Dosa Tawa' },
+                    
+                ],
+                previewImage: '/img/preview-img-10.png'
+            }
+        ])">
+                </div>
+
             </div>
         </div>
     </div>
-
     <script>
+        // Function to open modal and display PDF details
         function openPdfDetails(pdfData) {
             var pdfDetailsContainer = document.getElementById('pdfDetails');
             pdfDetailsContainer.innerHTML = '';
 
             pdfData.forEach(function (data, index) {
                 var pdfDetail = document.createElement('div');
+                pdfDetail.classList.add('accordion-item');
                 pdfDetail.innerHTML = `
-                <h5>${index + 1}. <a href="${data.link}" target="_blank">${data.name}</a></h5>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Page No.</th>
-                            <th>Category</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        ${data.pageIndexes.map(page => `
-                            <tr>
-                                <td>${page.pages}</td>
-                                <td>${page.category}</td>
-                            </tr>
-                        `).join('')}
-                    </tbody>
-                </table>
-                <img src="${data.previewImage}" class="img-fluid" alt="Preview Image">
-            `;
+                    <h2 class="accordion-header" id="flush-heading${index}">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${index}" aria-expanded="false" aria-controls="flush-collapse${index}">
+                        ${data.name}
+                      </button>
+                    </h2>
+                    <div id="flush-collapse${index}" class="accordion-collapse collapse" aria-labelledby="flush-heading${index}" data-bs-parent="#pdfDetails">
+                      <div class="accordion-body">
+                        <img src="${data.previewImage}" alt="Preview Image" class="img-fluid mb-3">
+                        <a href="${data.link}" target="_blank" class="btn btn-primary mb-3">Open PDF</a>
+                        <ul>
+                          ${data.pageIndexes.map(pageIndex => `<li>Page(s): ${pageIndex.pages}, Category: ${pageIndex.category}</li>`).join('')}
+                        </ul>
+                      </div>
+                    </div>
+                `;
                 pdfDetailsContainer.appendChild(pdfDetail);
             });
 
-            var modal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
-            modal.show();
+            var pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
+            pdfDetailsModal.show();
+        }
+
+        // Function to close modal
+        function closeModal() {
+            var pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
+            pdfDetailsModal.hide();
         }
     </script>
-
     <br>
+
     <!-- Contact section -->
     <div id="#contact">
         <section id="contact" class="contact-section">
@@ -290,8 +432,6 @@
             </div>
         </section>
     </div>
-
-
     <!-- Footer -->
     <footer class="footer-section">
         <div class="container">
@@ -316,7 +456,6 @@
                     <h5>Follow Us</h5>
                     <ul class="social-icons">
                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                     <!-- Google Maps -->
@@ -331,13 +470,13 @@
             </div>
             <div class="fixed-icons">
                 <!-- WhatsApp Icon -->
-                <a href="https://wa.me/9898217885?text=Hi%20I%20need%20your%20help%20for%20web%20design%20in%20Qatar."
+                <a href="https://wa.me/08452832783?text=Hi%20I%20need%20your%20help%20for%20web%20design%20in%20Qatar."
                     target="_blank" rel="noopener" class="whatsapp">
                     <i class="fab fa-whatsapp"></i>
                 </a>
 
                 <!-- Call Icon -->
-                <a href="tel:+9898217885" class="call">
+                <a href="tel:+09925232783" class="call">
                     <i class="fas fa-phone"></i>
                 </a>
 
@@ -353,7 +492,8 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="contactModalLabel">Contact Form</h5>
+                            <h5 class="modal-title" id="contactModalLabel">Contact me for more details</details>
+                            </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -384,18 +524,24 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </footer>
-
-
-
-    <!-- Custom JavaScript -->
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
-
 
 </html>

@@ -8,38 +8,41 @@ $(document).ready(function () {
         });
         }
     });
-
 //pop on
-function openPdfModal(pdfData) {
-    // Clear any existing content in the modal body
-    document.getElementById('pdfLinks').innerHTML = '';
+function openPdfDetails(pdfData) {
+    var pdfDetailsContainer = document.getElementById('pdfDetails');
+    pdfDetailsContainer.innerHTML = '';
 
-    // Counter for numbering
-    var counter = 1;
-
-    // Loop through the provided PDF data and create HTML elements
-    pdfData.forEach(function(data) {
-        var pdfLinkElement = document.createElement('a');
-        pdfLinkElement.setAttribute('href', '#');
-        pdfLinkElement.setAttribute('data-bs-toggle', 'modal');
-        pdfLinkElement.setAttribute('data-bs-target', '#pdfPreviewModal');
-        pdfLinkElement.innerHTML = counter + '. ' + data.name; // Display number and file name
-        pdfLinkElement.classList.add('d-block', 'my-2');
-        pdfLinkElement.addEventListener('click', function() {
-            showPdfPreview(data.link);
-        });
-        document.getElementById('pdfLinks').appendChild(pdfLinkElement);
-        counter++; // Increment counter
+    pdfData.forEach(function (data, index) {
+        var pdfDetail = document.createElement('div');
+        pdfDetail.classList.add('accordion-item');
+        pdfDetail.innerHTML = `
+            <h2 class="accordion-header" id="flush-heading${index}">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${index}" aria-expanded="false" aria-controls="flush-collapse${index}">
+                ${data.name}
+              </button>
+            </h2>
+            <div id="flush-collapse${index}" class="accordion-collapse collapse" aria-labelledby="flush-heading${index}" data-bs-parent="#pdfDetails">
+              <div class="accordion-body">
+                <img src="${data.previewImage}" alt="Preview Image" class="img-fluid mb-3">
+                <a href="${data.link}" target="_blank" class="btn btn-primary mb-3">Open PDF</a>
+                <ul>
+                  ${data.pageIndexes.map(pageIndex => `<li>Page(s): ${pageIndex.pages}, Category: ${pageIndex.category}</li>`).join('')}
+                </ul>
+              </div>
+            </div>
+        `;
+        pdfDetailsContainer.appendChild(pdfDetail);
     });
 
-    // Show the modal
-    var modal = new bootstrap.Modal(document.getElementById('pdfModal'));
-    modal.show();
+    var pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
+    pdfDetailsModal.show();
 }
 
-function showPdfPreview(pdfLink) {
-    var pdfPreviewElement = document.getElementById('pdfPreview');
-    pdfPreviewElement.setAttribute('src', pdfLink);
+// Function to close modal
+function closeModal() {
+    var pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
+    pdfDetailsModal.hide();
 }
 
 

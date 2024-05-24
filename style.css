@@ -1,10 +1,22 @@
+:root {
+  --primary-color: #93262A;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --light-text-color: #666;
+  --link-hover-color: #93262A;
+  --banner-margin-top: 50px;
+  --font-family: "Fraunces", sans-serif;
+  --font-weight: 500;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Fraunces", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  word-spacing: 5px;
+  text-transform: uppercase;
 }
 
 /* Navbar */
@@ -21,13 +33,17 @@ body {
 }
 
 .nav-link {
-  color: #93262A;
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--link-hover-color);
 }
 
 /* Banner */
 .banner {
   width: 100%;
-  margin-top: 50px; 
+  margin-top: var(--banner-margin-top);
 }
 
 .ban_img {
@@ -49,10 +65,21 @@ body {
 /* Services */
 h1 {
   text-align: center;
-  color: #93262A;
+  color: var(--primary-color);
 }
-#services{
+
+#services {
   background-color: rgb(248, 246, 243);
+}
+
+.img-thumbnail {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.image-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 
 /* Modal */
@@ -74,7 +101,7 @@ h1 {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  max-width: 600px; 
+  max-width: 600px;
 }
 
 .close {
@@ -93,10 +120,9 @@ h1 {
 
 #pdfViewer {
   width: 100%;
-  height: 60vh; 
+  height: 50px;
 }
 
-/* Responsive adjustments */
 @media only screen and (max-width: 768px) {
   .modal-content {
     margin: 20px auto;
@@ -113,15 +139,21 @@ h1 {
 .about-section {
   padding: 50px 0;
   text-align: left;
-  background-color: #f8f9fa; 
+  background-color: var(--secondary-color);
 }
 
 .about-section h2 {
-  color: #333; 
+  color: var(--text-color);
 }
 
 .about-section p {
-  color: #666;
+  color: var(--light-text-color);
+}
+
+@media (max-width: 767px) {
+  .about-section {
+    padding: 30px 0;
+  }
 }
 
 /* Contact section */
@@ -133,31 +165,37 @@ h1 {
 }
 
 .contact-section h2 {
-  color: #333; 
+  color: var(--text-color);
 }
 
 .contact-section p {
-  color: #666; 
+  color: var(--light-text-color);
 }
 
 .contact-section ul {
-  list-style-type: none; 
+  list-style-type: none;
   padding: 0;
 }
 
 .contact-section ul li {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 .contact-section ul li:last-child {
-  margin-bottom: 0; 
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .contact-section {
+    padding: 30px 0;
+  }
 }
 
 /* Footer */
 .footer-section {
   padding: 50px 0;
   text-align: left;
-  background-color: #333; 
+  background-color: #333;
   color: #fff;
 }
 
@@ -166,29 +204,42 @@ h1 {
 }
 
 .footer-section p {
-  color: #ccc; 
+  color: #ccc;
 }
 
 .social-icons {
-  list-style-type: none; 
+  list-style-type: none;
   padding: 0;
 }
 
 .social-icons li {
   display: inline-block;
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 
 .social-icons li:last-child {
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .social-icons a {
-  color: #fff; 
+  color: #fff;
 }
-/* Your existing CSS styles */
 
-/* Position the icons */
+.social-icons a:hover {
+  color: var(--link-hover-color);
+}
+
+@media (max-width: 767px) {
+  .footer-section {
+    padding: 30px 0;
+  }
+
+  .social-icons li {
+    margin-right: 8px;
+  }
+}
+
+/* Fixed Icons */
 .fixed-icons {
   position: fixed;
   bottom: 20px;
@@ -196,7 +247,6 @@ h1 {
   z-index: 9999;
 }
 
-/* Style the icons */
 .fixed-icons a {
   display: inline-block;
   margin-left: 10px;
@@ -215,7 +265,6 @@ h1 {
   background-color: #0062cc;
 }
 
-/* Style the WhatsApp icon */
 .fixed-icons a.whatsapp {
   background-color: #25d366;
 }
@@ -224,7 +273,6 @@ h1 {
   background-color: #128c7e;
 }
 
-/* Style the Call icon */
 .fixed-icons a.call {
   background-color: #dc3545;
 }
@@ -233,7 +281,6 @@ h1 {
   background-color: #c82333;
 }
 
-/* Style the Email icon */
 .fixed-icons a.email {
   background-color: #ffc107;
 }
@@ -242,47 +289,7 @@ h1 {
   background-color: #e0a800;
 }
 
-/* Additional CSS styles for the modal, if any */
-
-/* Responsive adjustments */
-@media (max-width: 767px) {
-  .about-section,
-  .contact-section,
-  .footer-section {
-    padding: 30px 0; 
-  }
-
-  .social-icons li {
-    margin-right: 8px; 
-  }
+/* Heading Styles */
+h5 {
+  color: #f77206;
 }
-
-/* Hover effects */
-.navbar-nav .nav-link:hover {
-    color: #93262A;
-}
-
-.social-icons a:hover {
-    color: #93262A;
-}
-
-.image-hover:hover {
-  transform: scale(1.1); /* Increase size on hover */
-  transition: transform 0.5s ease; /* Add smooth transition */
-}
-/* Hover effects */
-.navbar-nav .nav-link:hover {
-  color: #93262A;
-}
-
-.social-icons a:hover {
-  color: #93262A;
-}
-.img-thumbnail {
-  max-width: 200px; /* Adjust the maximum width as needed */
-  max-height: 200px; /* Adjust the maximum height as needed */
-}
-h5{
-  color:#f77206;
-}
-
