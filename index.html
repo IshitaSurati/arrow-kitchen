@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,10 @@
     <title>Arrow Kitchen</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-    <!-- Bootstrap links -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/style.css">
     <!-- Swiper CSS -->
@@ -21,25 +19,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <!-- social-icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <!-- smtp cdn -->
-    <script src=" https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- smtp js -->
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-light shadow-sm bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="/img/img1logo.png" alt="logo" width="150">
             </a>
-            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbar4">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar4">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbar4">
@@ -125,10 +123,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="pdfDetailsModalLabel">PDF Details</h5>
-                    <!-- Cross icon -->
-                    <button type="button" class="btn-close" aria-label="Close" onclick="closeModal()"
-                        data-bs-dismiss="modal"></button>
-                        <span class="modal-toggler-icon"></span>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="pdfDetails" class="accordion accordion-flush"></div>
@@ -166,46 +161,18 @@
                                 name: 'PRABHA MRP CATALOGUE (Open Pdf for Details)',
                                 pageIndexes: [
                                     { pages: '1', category: 'Thali Set' },
-                                    { pages: '2-3', category: 'Plates' },
-                                    { pages: '4-6', category: 'Vati' },
-                                    { pages: '7-10', category: 'Glass Set' },
-                                    { pages: '11-13', category: 'Water Jug' },
-                                    { pages: '14-15', category: 'Handi Set' },
-                                    { pages: '16', category: 'Lemon Set Hand Press Juicer' },
-                                    { pages: '17', category: 'Casserole,Saucepan,Puttu Kudam,Coffee Dabra' },
-                                    { pages: '18', category: 'Spice Box' },
-                                    { pages: '19-20', category: 'Double Wall Tea & Coffee Mug' },
-                                    { pages: '21', category: 'Canisters' },
-                                    { pages: '22', category: 'Ghee Pot & Dispenser' },
-                                    { pages: '23-24', category: 'Ice Bucket' },
-                                    { pages: '25', category: 'Pawali Matki' },
-                                    { pages: '26', category: 'Lunch Box' },
-                                    { pages: '27-28', category: 'S.S Double/Single Wall & Feeding Bottle' },
-                                    { pages: '28', category: 'Tumbler With Straws' },
-                                    { pages: '29', category: 'Knife & Peeler Utility Items' },
-                                    { pages: '30-32', category: 'Gift Items' },
+                                    { pages: '2', category: 'Dinner Set' },
+                                    { pages: '3', category: 'Gift Items' },
+                                    { pages: '4', category: 'Copper Bottom' },
+                                    { pages: '5-7', category: 'Belly Range' },
+                                    { pages: '8', category: 'Triply Range' },
+                                    { pages: '9', category: 'Induction Range' },
+                                    { pages: '10', category: 'Gifting Articles' },
+                                    { pages: '11-12', category: 'Stainless Steel Items' }
                                 ],
-                                previewImage: '/img/preview-img-2.png'
-                            },
-                            {
-                                link: 'https://drive.google.com/file/d/1PfOr0X7Pgbnc2WxSMTc83d6Z9jvPkAA8/view?usp=sharing',
-                                name: 'PRABHA COOKWARE RANGE (Open Pdf for Details)',
-                                pageIndexes: [
-                                    { pages: '1', category: 'Magnum (Hammered)' },
-                                    { pages: '2', category: 'enzo series' },
-                                    { pages: '3-5', category: 'prima (tri-ply)' },
-                                    { pages: '6', category: 'prochef (tri-ply)' },
-                                    { pages: '7-8', category: 'hexa cube (non-stick)' },
-                                    { pages: '8', category: 'stella (non-stick)' },
-                                    { pages: '9', category: 'astrid (non-stick)' },
-                                    { pages: '10', category: 'idli cooker & multi kadhai' },
-                                    { pages: '11', category: 'pressure cooker (tri-ply)' },
-                                    { pages: '11-12', category: 'pressure cooker (stainless steel & aluminium)' },
-                                    { pages: '12', category: 'spare parts' }
-                                ],
-                                previewImage: '/img/preview-img-3.png'
+                                previewImage: '/img/preview-img-1.png'
                             }
-                        ])">
+                        ])" />
                 </div>
                 <!-- Second Image Block -->
                 <div class="col-lg-4 col-md-4 col-sm-6">
@@ -363,50 +330,46 @@
             }
         ])">
                 </div>
-
             </div>
         </div>
     </div>
-    <script>
-        // Function to open modal and display PDF details
-        function openPdfDetails(pdfData) {
-            var pdfDetailsContainer = document.getElementById('pdfDetails');
-            pdfDetailsContainer.innerHTML = '';
 
-            pdfData.forEach(function (data, index) {
-                var pdfDetail = document.createElement('div');
-                pdfDetail.classList.add('accordion-item');
-                pdfDetail.innerHTML = `
-                    <h2 class="accordion-header" id="flush-heading${index}">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse${index}" aria-expanded="false" aria-controls="flush-collapse${index}">
-                        ${data.name}
-                      </button>
-                    </h2>
-                    <div id="flush-collapse${index}" class="accordion-collapse collapse" aria-labelledby="flush-heading${index}" data-bs-parent="#pdfDetails">
-                      <div class="accordion-body">
-                        <img src="${data.previewImage}" alt="Preview Image" class="img-fluid mb-3">
-                        <a href="${data.link}" target="_blank" class="btn btn-primary mb-3">Open PDF</a>
-                        <ul>
-                          ${data.pageIndexes.map(pageIndex => `<li>Page(s): ${pageIndex.pages}, Category: ${pageIndex.category}</li>`).join('')}
-                        </ul>
-                      </div>
+    <script>
+        function openPdfDetails(pdfData) {
+            const pdfDetails = document.getElementById('pdfDetails');
+            pdfDetails.innerHTML = '';
+
+            pdfData.forEach((pdf, index) => {
+                const itemId = `item-${index}`;
+                const headerId = `heading-${index}`;
+                const collapseId = `collapse-${index}`;
+
+                const itemHtml = `
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="${headerId}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#${collapseId}" aria-expanded="false" aria-controls="${collapseId}">
+                                <img src="${pdf.previewImage}" alt="Preview Image" width="50" height="50" class="me-3">${pdf.name}
+                            </button>
+                        </h2>
+                        <div id="${collapseId}" class="accordion-collapse collapse" aria-labelledby="${headerId}" data-bs-parent="#pdfDetails">
+                            <div class="accordion-body">
+                                <p>Page Indexes:</p>
+                                <ul>
+                                    ${pdf.pageIndexes.map(index => `<li>Pages: ${index.pages} - Category: ${index.category}</li>`).join('')}
+                                </ul>
+                                <a href="${pdf.link}" target="_blank" class="btn btn-primary">Open PDF</a>
+                            </div>
+                        </div>
                     </div>
                 `;
-                pdfDetailsContainer.appendChild(pdfDetail);
+
+                pdfDetails.insertAdjacentHTML('beforeend', itemHtml);
             });
 
-            var pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
+            const pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
             pdfDetailsModal.show();
         }
-
-        // Function to close modal
-        function closeModal() {
-            var pdfDetailsModal = new bootstrap.Modal(document.getElementById('pdfDetailsModal'));
-            pdfDetailsModal.hide();
-        }
     </script>
-    <br>
-
     <!-- Contact section -->
     <div id="#contact">
         <section id="contact" class="contact-section">
@@ -492,12 +455,11 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="contactModalLabel">Contact me for more details</details>
-                            </h5>
+                            <h5 class="modal-title" id="contactModalLabel">Contact me for more details</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form id="contactForm" onsubmit="emailform(); reset(); return false;">
+                            <form  onsubmit="sendEmail(); reset(); return false">
                                 <div class="mb-3">
                                     <input type="text" class="form-control" id="fullName" placeholder="Full Name"
                                         name="fullName" required>
@@ -526,22 +488,6 @@
             </div>
         </div>
     </footer>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="/script.js"></script>
-    <!-- jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 
 </html>
